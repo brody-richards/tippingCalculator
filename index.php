@@ -10,8 +10,9 @@
     <main>
         <section class="tippingCalculator">
             <h1>Tipping Calculator</h1>
-            <p>Enter the folling information to split the check.</p>
+            <p>Enter the following information to split the check.</p>
 
+            <div class="tippingForm">
             <form action="result.php" name="tippingCalculator" method="post">
                 <div class="people">
                     <label for="numberOfPeople">Number of Diners:</label>
@@ -19,19 +20,19 @@
                 </div>
                 <div class="cost">
                     <label for="totalCost">Total Cost:</label>
-                    <input type="number" name="totalCost" id="totalCost" min="0">
+                    <input type="number" name="totalCost" id="totalCost" min="0" step="0.01">
                 </div>
 
                 <div class="percent">
                     <label for="tipPercent">Tip %:</label>
-                    <input type="number" name="tipPercent" id="tipPercent" min="0">
+                    <input type="number" name="tipPercent" id="tipPercent" min="0" step="0.01">
                 </div>
 
                 <input type="submit" value="Calculate">
 
             </form>
+            </div>
 
-            
         </section>
     </main>
 </body>
